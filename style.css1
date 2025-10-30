@@ -1,0 +1,183 @@
+/* === General Page Setup === */
+body {
+  font-family: "Poppins", "Noto Sans Ethiopic", sans-serif;
+  background: linear-gradient(135deg, #d0e7ff, #bbdefb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* === Main Container === */
+.container {
+  background: #f3faff;
+  padding: 40px 50px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* === Headings === */
+h1, h2 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 26px;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 25px;
+  color: #1565c0;
+}
+
+/* === Labels & Inputs === */
+label {
+  display: block;
+  font-weight: 600;
+  color: #1a237e;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #cfd8dc;
+  margin-bottom: 18px;
+  font-size: 15px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 6px rgba(25, 118, 210, 0.4);
+}
+
+/* === Buttons === */
+button[type="submit"],
+#langToggle {
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background: #0d47a1;
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background: #1565c0;
+}
+
+#langToggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: #1976d2;
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+#langToggle:hover {
+  background: #0d47a1;
+}
+
+/* === Survey Questions === */
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #90caf9;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #e3f2fd;
+  transition: box-shadow 0.3s ease;
+}
+
+fieldset:hover {
+  box-shadow: 0 0 10px rgba(13, 71, 161, 0.2);
+}
+
+legend {
+  font-weight: 600;
+  color: #0d47a1;
+  font-size: 15px;
+}
+
+label input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* === GitHub Button === */
+.github-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #24292e;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.github-button:hover {
+  background: #444c56;
+}
+
+/* === Thank You Message === */
+#thankYouMessage {
+  text-align: center;
+  color: #2e7d32;
+  font-weight: bold;
+  margin-top: 25px;
+  display: none;
+  font-size: 18px;
+}
+
+/* === Mobile Responsive === */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 20px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  button[type="submit"] {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
